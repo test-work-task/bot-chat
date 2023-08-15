@@ -1,27 +1,19 @@
-# React + TypeScript + Vite
+# Bot Chat
+Этот проект представляет собой чат с ботом, разработанный с использованием React и TypeScript.   ответы бота отображаются посимвольно, так как ответы возвращаются в формате чанков.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Дизайн
+Дизайн компонента можно найти [по ссылке](https://www.figma.com/file/ajCiNj9kSJHxEQkGlfxBqv/BIT-%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5?type=design&node-id=0%3A1&mode=dev)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+##Эндпоинт
+URL эндпоинта для отправки сообщений боту:
 ```
+http://185.46.8.130/api/v1/chat/send-message.
+```
+Метод запроса: POST.
+Тело запроса должно быть в формате JSON и содержать поле message со значением типа string, которое представляет собой сообщение, отправляемое боту.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##Технологии
+ - React с TypeScript
+ - SCSS/SASS modules
+ - JS Streams
+ - Vite
