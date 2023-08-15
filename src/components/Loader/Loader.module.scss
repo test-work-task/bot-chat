@@ -1,0 +1,60 @@
+.container {
+	background-color: rgba(34, 118, 245, 0.20);
+	padding: 12px 20px;
+	width: fit-content;
+    border-radius: 28px;
+}
+
+:root {
+	--loader-size: 0.625rem;
+	--loader-spacing: 0.3125rem;
+	--loader-background: rgba(0, 0, 0, .1);
+	--loader-background-active: rgba(0, 0, 0, .3);
+	--loader-animation-duration: 0.8s;
+}
+
+.loader {
+	position: relative;
+	margin-left: calc(var(--loader-spacing) + var(--loader-size));
+	margin-right: calc(var(--loader-spacing) + var(--loader-size));
+	animation-delay: calc(var(--loader-animation-duration) / 3);
+}
+.loader,
+.loader::before,
+.loader::after {
+	display: inline-block;
+	width: var(--loader-size);
+	height: var(--loader-size);
+	background: var(--loader-background);
+	border-radius: 100%;
+	animation-name: loader;
+	animation-duration: var(--loader-animation-duration);
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.loader::before,
+.loader::after {
+	content: '';
+	position: absolute;
+	top: 0;
+}
+.loader::before {
+	left: calc((var(--loader-spacing) + var(--loader-size)) * -1);
+}
+.loader::after {
+	right: calc((var(--loader-spacing) + var(--loader-size)) * -1);
+	animation-delay: calc(var(--loader-animation-duration) / 3 * 2);
+}
+@keyframes loader {
+	0%,
+	66%,
+	100% {
+		transform: translateY(10%);
+		background: var(--loader-background);
+	}
+
+	33% {
+		transform: translateY(-25%);
+		background: var(--loader-background-active);
+	}
+}

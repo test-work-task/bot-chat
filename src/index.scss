@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,700);
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #007AFE;
+  background-image: url('./images/background.png');
+  color: #FFF;
+  font-family: 'Open Sans';
+  overflow: hidden;
+}
+#root {
+  display: flex;
+  flex: 1;
+}
