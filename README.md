@@ -3,7 +3,8 @@
 
 <details>
 <summary>Демо</summary>
-![Unite Gaming account](chat-bot.gif)
+
+![chat-bot](chat-bot.gif)
 </details>
 
 ## Дизайн
