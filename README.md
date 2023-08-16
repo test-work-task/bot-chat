@@ -1,6 +1,11 @@
 # Bot Chat
 Этот проект был сделан как тестовое задание и представляет собой чат с ботом, разработанный с использованием React и TypeScript. Ответы бота отображаются посимвольно, так как ответы возвращаются в формате чанков.
 
+<details>
+<summary>Демо</summary>
+![Unite Gaming account](chat-bot.gif)
+</details>
+
 ## Дизайн
 Дизайн компонента можно найти [по ссылке](https://www.figma.com/file/ajCiNj9kSJHxEQkGlfxBqv/BIT-%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5?type=design&node-id=0%3A1&mode=dev)
 
@@ -19,7 +24,8 @@ http://185.46.8.130/api/v1/chat/send-message.
  - Vite
 
 <details>
-   <summary>Здание</summary>
+<summary>Здание</summary>
+
 Нужно сделать переиспользуемый адаптивный компонент чата. 
 
 Подробное описание задания:
